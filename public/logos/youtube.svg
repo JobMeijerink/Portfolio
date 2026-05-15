@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 45" width="200" height="45">
+  <!-- Red play button -->
+  <rect x="0" y="4" width="52" height="37" rx="9" fill="#FF0000"/>
+  <polygon points="21,13.5 21,31.5 37,22.5" fill="#FFFFFF"/>
+  <!-- YouTube wordmark in white -->
+  <text x="62" y="32" font-family="'YouTube Sans','Roboto',Arial,sans-serif" font-weight="700" font-size="26" fill="#FFFFFF" letter-spacing="-0.5">YouTube</text>
+</svg>
