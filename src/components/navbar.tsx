@@ -44,7 +44,7 @@ export function Navbar() {
           <ul className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
             {navLinks.map((link) => (
               <li key={link.name}>
-                
+                <a
                   href={link.href}
                   className="hover:text-white transition-colors duration-200"
                 >
@@ -56,7 +56,7 @@ export function Navbar() {
           <div className="w-px h-5 bg-border mx-2"></div>
           <div className="flex items-center gap-4 text-muted-foreground">
             {socialLinks.map((social, i) => (
-              
+              <a
                 key={i}
                 href={social.href}
                 target="_blank"
@@ -90,7 +90,7 @@ export function Navbar() {
             <ul className="flex flex-col gap-4 text-lg font-medium">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  
+                  <a
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="text-white hover:text-primary transition-colors block"
@@ -103,7 +103,7 @@ export function Navbar() {
             <div className="h-px w-full bg-border"></div>
             <div className="flex items-center gap-6">
               {socialLinks.map((social, i) => (
-                
+                <a
                   key={i}
                   href={social.href}
                   target="_blank"
