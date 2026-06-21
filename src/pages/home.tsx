@@ -108,7 +108,7 @@ export default function Home() {
                 <h3 className="text-primary font-semibold tracking-wider uppercase text-sm mb-4">About Me</h3>
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">A Dutch Video Editor Living Life on the Road</h2>
                 <p className="text-muted-foreground text-lg md:text-xl mb-5 leading-relaxed font-light">My name is Job (Jacob in English). I'm 27, Dutch, and I've been traveling the world while building a career in video editing.</p>
-                <p className="text-muted-foreground text-lg md:text-xl mb-8 leading-relaxed font-light">I've built a global network in the creator space, worked with major YouTube channels and agencies, and generated over 500 million views across platforms. My toolkit revolves around bringing stories to life through precise cuts and compelling visuals.</p>
+                <p className="text-muted-foreground text-lg md:text-xl mb-8 leading-relaxed font-light">I've built a global network in the creator space, worked with e.g. big YouTube channels and UGC-agencies, and generated over 500 million views across platforms through organic content alone.</p>
 
                 <div className="grid grid-cols-4 gap-2">
                   {[
@@ -323,7 +323,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
             {[
               { name: "Aaron van Kampen", image: "https://ucarecdn.com/929b30bc-f188-48a1-8aaa-4ec405bb9f93/-/format/auto/", desc: "Canadian real estate content creator. Worked on mansion tour videos and real estate vlogs." },
-              { name: "The Calum Johnson Show", image: "https://yt3.googleusercontent.com/_rIE-WwpkpqrtcHmNNsvEuPzo1OvQi_9LrQYxc6D2ejvsT23J8CKyseBjZ4cOwL93KTVa8zqig=s400-c-k-c0x00ffffff-no-rj", desc: "Grew the podcast from 900 to 150K+ YouTube subscribers through consistent editing and creative innovation." },
+              { name: "The Calum Johnson Show", image: "https://yt3.googleusercontent.com/_rIE-WwpkpqrtcHmNNsvEuPzo1OvQi_9LrQYxc6D2ejvsT23J8CKyseBjZ4cOwL93KTVa8zqig=s400-c-k-c0x00ffffff-no-rj", desc: "Grew the podcast from 900 to 250K+ YouTube subscribers through consistent editing and creative innovation." },
               { name: "Reuben Schmitz", image: "https://yt3.googleusercontent.com/9OyETUL-aNJaf18h9mM0Xuw_5buRTeYy0xSsScGDTU-BGbkvk2aOK30zOwn7dCiOKM6NjPuyVw=s400-c-k-c0x00ffffff-no-rj", initials: "RS", desc: "Travel & lifestyle YouTuber. Edited travel vlogs showcasing destinations around the world." },
             ].map((partner, i) => (
               <FadeIn
