@@ -34,9 +34,9 @@ export default function Home() {
               <div>
                 <FadeIn delay={0.2}>
                   <h1 className="text-[6.5vw] sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-white mb-5 leading-[1.15] whitespace-nowrap">
-                    Turning Ideas Into{' '}
+                    Hand Me Your Raw Footage And {' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400 relative inline-block">
-                      Real Results
+                      I'll Take Care Of It
                       <svg
                         className="absolute -bottom-3 left-0 w-full overflow-visible"
                         height="16"
