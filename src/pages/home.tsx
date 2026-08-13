@@ -30,7 +30,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto relative z-10">
 
             {/* ── ROW 1: Hero text (left) + selfie (right) ── */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 lg:gap-20 items-center">
               <div>
                 <FadeIn delay={0.2}>
                   <h1 className="text-[6.5vw] sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-white mb-5 leading-[1.15]">
