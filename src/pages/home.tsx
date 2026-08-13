@@ -34,7 +34,7 @@ export default function Home() {
               <div>
                 <FadeIn delay={0.2}>
                   <h1 className="text-[6.5vw] sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-white mb-5 leading-[1.15]">
-                    Hand Me Your Raw Footage And
+                    Hand Me Your Raw Footage{'\u00A0'}And
                     <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400 relative inline-block">
                       I'll Take Care Of It
