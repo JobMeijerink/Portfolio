@@ -156,7 +156,7 @@ export default function Home() {
               <div className="bg-card/40 backdrop-blur-xl border border-border/50 rounded-[2rem] md:rounded-[2.5rem] p-5 md:p-8 grid grid-cols-2 md:flex md:flex-row md:items-center justify-around gap-0 md:gap-6 text-center shadow-[0_0_90px_-10px_rgba(79,70,229,0.33),_0_0_40px_-5px_rgba(59,130,246,0.13)] hover:-translate-y-1 transition-transform duration-300">
                 <div className="px-2 py-3 md:py-1 flex flex-col items-center justify-center border-b border-r md:border-b-0 md:border-r-0 border-white/15">
                   <div className="text-3xl md:text-4xl font-bold text-white mb-1">500M+</div>
-                  <div className="text-muted-foreground uppercase tracking-widest text-[10px] md:text-xs font-semibold mb-2">Views Generated</div>
+                  <div className="text-muted-foreground uppercase tracking-widest text-[10px] md:text-xs font-semibold mb-2">Views Generated Across All Platforms</div>
                   <span className="text-2xl md:text-3xl leading-none" style={{ filter: 'saturate(0.65) brightness(0.82)', display: 'inline-block' }}>👁️</span>
                 </div>
                 <div className="hidden md:block w-px h-14 bg-border/50 shrink-0"></div>
