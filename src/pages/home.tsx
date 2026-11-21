@@ -162,7 +162,7 @@ export default function Home() {
                 <div className="hidden md:block w-px h-14 bg-border/50 shrink-0"></div>
                 <div className="px-2 py-3 md:py-1 flex flex-col items-center justify-center border-b md:border-b-0 border-white/15">
                   <div className="text-3xl md:text-4xl font-bold text-white mb-1">3</div>
-                  <div className="text-muted-foreground uppercase tracking-widest text-[10px] md:text-xs font-semibold mb-2">YouTube <svg viewBox="0 0 28 20" className="inline-block h-[1.1em] w-auto align-[-0.2em] mx-0.5" aria-label="YouTube" role="img"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg> Channels Grown</div>
+                  <div className="text-muted-foreground uppercase tracking-widest text-[10px] md:text-xs font-semibold mb-2">YouTube <svg viewBox="0 0 28 20" className="inline-block h-[1.1em] w-auto align-[-0.2em] mx-0.5" aria-label="YouTube" role="img"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg> Channels Grown With 100K+ Subscribers</div>
                   <span className="text-2xl md:text-3xl leading-none" style={{ filter: 'saturate(0.65) brightness(0.82)', display: 'inline-block' }}>📈</span>
                 </div>
                 <div className="hidden md:block w-px h-14 bg-border/50 shrink-0"></div>
