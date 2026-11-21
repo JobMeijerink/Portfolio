@@ -371,7 +371,7 @@ export default function Home() {
                 photo: "https://ucarecdn.com/929b30bc-f188-48a1-8aaa-4ec405bb9f93/-/format/auto/"
               },
               {
-                quote: "Thanks to Job we were able to grow the podcast from 0 to 200K+ subscribers. He communicates well and is constantly innovating new ideas.",
+                quote: "Thanks to Jacob we were able to grow the podcast from 0 to 200K+ subscribers. He communicates well and thinks ahead. If you hire him, he will make sure your channels keep growing.",
                 author: "Calum Johnson",
                 role: "Podcast Host",
                 photo: "https://yt3.googleusercontent.com/_rIE-WwpkpqrtcHmNNsvEuPzo1OvQi_9LrQYxc6D2ejvsT23J8CKyseBjZ4cOwL93KTVa8zqig=s400-c-k-c0x00ffffff-no-rj"
