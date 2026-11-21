@@ -355,13 +355,10 @@ export default function Home() {
         </section>
 
         {/* SECTION 8 - TESTIMONIALS */}
-        <section id="testimonials" className="pt-4 md:pt-6 pb-16 relative bg-black overflow-hidden">
-          {/* Soft green spotlight behind the reviews */}
-          <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-            <div className="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[120%] md:w-[85%] h-[80%] rounded-[50%] bg-[radial-gradient(ellipse_at_center,_rgba(34,197,94,0.24)_0%,_rgba(34,197,94,0.08)_40%,_transparent_70%)] blur-2xl" />
-            <div className="absolute left-1/2 top-[30%] -translate-x-1/2 w-[60%] h-[40%] rounded-[50%] bg-[radial-gradient(ellipse_at_center,_rgba(99,102,241,0.16)_0%,_transparent_70%)] blur-3xl" />
-          </div>
-          <div className="px-6 max-w-7xl mx-auto relative z-10">
+        <section id="testimonials" className="pt-4 md:pt-6 pb-16 relative bg-black">
+          <div className="px-4 md:px-6 max-w-7xl mx-auto relative z-10">
+          {/* Standalone box: detached panel for the reviews */}
+          <div className="rounded-[1.75rem] md:rounded-[2.5rem] border border-white/10 bg-[#0d0d12] shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9),inset_0_1px_0_rgba(255,255,255,0.06)] px-3 py-8 md:p-12">
           <FadeIn className="text-center mb-10">
             <div className="inline-flex items-center gap-2 mb-5 px-3 md:px-4 py-1.5 rounded-full whitespace-nowrap border border-green-500/30 bg-green-500/10 shadow-[0_0_24px_-6px_rgba(34,197,94,0.6)]">
               <span className="text-amber-400 text-xs md:text-sm tracking-[0.1em] md:tracking-[0.15em] leading-none">★★★★★</span>
@@ -422,6 +419,7 @@ export default function Home() {
                 </div>
               </FadeIn>
             ))}
+          </div>
           </div>
           </div>
         </section>
