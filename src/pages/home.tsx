@@ -167,9 +167,9 @@ export default function Home() {
                 </div>
                 <div className="hidden md:block w-px h-14 bg-border/50 shrink-0"></div>
                 <div className="px-2 py-3 md:py-1 flex flex-col items-center justify-center border-r md:border-r-0 border-white/15">
-                  <div className="text-3xl md:text-4xl font-bold text-white mb-1">125+</div>
-                  <div className="text-muted-foreground uppercase tracking-widest text-[10px] md:text-xs font-semibold mb-2">Projects Delivered</div>
-                  <span className="text-lg md:text-xl leading-none" style={{ filter: 'saturate(0.65) brightness(0.82)', display: 'inline-block' }}>💼</span>
+                  <div className="text-3xl md:text-4xl font-bold text-white mb-1">3 YT Channels+</div>
+                  <div className="text-muted-foreground uppercase tracking-widest text-[10px] md:text-xs font-semibold mb-2">Grown with more than 100K Subs</div>
+                  <span className="text-lg md:text-xl leading-none" style={{ filter: 'saturate(0.65) brightness(0.82)', display: 'inline-block' }}>📈</span>
                 </div>
                 <div className="hidden md:block w-px h-14 bg-border/50 shrink-0"></div>
                 <div className="px-2 py-3 md:py-1 flex flex-col items-center justify-center">
