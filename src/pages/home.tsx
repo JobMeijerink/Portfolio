@@ -354,7 +354,70 @@ export default function Home() {
           </div>
         </section>
 
-        {/* BRANDS MARQUEE — directly after partnerships */}
+        {/* SECTION 8 - TESTIMONIALS */}
+        <section id="testimonials" className="py-16 relative bg-black">
+          <div className="px-6 max-w-7xl mx-auto relative z-10">
+          <FadeIn className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">What People Say</h2>
+            <p className="text-xl text-muted-foreground font-light">From the creators and clients I've worked with.</p>
+          </FadeIn>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
+            {[
+              {
+                quote: "Extremely reliable video editor. He knows what it takes to create viral content and you can always count on him. He was pivotal for the success of my channels.",
+                author: "Aaron van Kampen",
+                role: "Content Creator",
+                photo: "https://ucarecdn.com/929b30bc-f188-48a1-8aaa-4ec405bb9f93/-/format/auto/"
+              },
+              {
+                quote: "Thanks to Job we were able to grow the podcast from 900 to 150K+ subscribers. He communicates well and is constantly innovating new ideas.",
+                author: "Calum Johnson",
+                role: "Podcast Host",
+                photo: "https://yt3.googleusercontent.com/_rIE-WwpkpqrtcHmNNsvEuPzo1OvQi_9LrQYxc6D2ejvsT23J8CKyseBjZ4cOwL93KTVa8zqig=s400-c-k-c0x00ffffff-no-rj"
+              },
+              {
+                quote: "Job was one of the video editors in our UGC-agency team. I would recommend using him as an editor because he does what he says and the performance of his ads was great.",
+                author: "Kevin Vriens",
+                role: "Agency Owner",
+                photo: "/kevin-vriens.png"
+              }
+            ].map((testimonial, i) => (
+              <FadeIn
+                key={i}
+                delay={i * 0.15}
+                className={i === 2 ? 'col-span-2 md:col-span-1 flex justify-center mt-1 md:mt-0' : ''}
+              >
+                <div className={`relative h-full w-full ${i === 2 ? 'max-w-[calc(50%-6px)] md:max-w-none' : ''}`}>
+                  <div className="absolute -inset-12 bg-[radial-gradient(ellipse_at_center,_#080808_0%,_transparent_65%)] pointer-events-none" />
+                  <div className="bg-card border border-white/10 rounded-xl md:rounded-[2rem] p-3 md:p-8 h-full flex flex-col relative overflow-hidden group hover:border-green-500/30 hover:-translate-y-1 transition-all duration-200 shadow-[0_0_22px_-6px_rgba(34,197,94,0.44)] hover:shadow-[0_0_35px_-4px_rgba(34,197,94,0.69)]">
+                  <div className="absolute top-0 right-0 p-3 md:p-8 opacity-5 text-4xl md:text-8xl font-serif text-white group-hover:text-green-400 transition-colors leading-none">"</div>
+                  <p className="text-muted-foreground text-[10px] md:text-lg leading-relaxed mb-3 md:mb-8 flex-grow relative z-10 italic">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="mt-auto relative z-10 flex items-center justify-between gap-2 md:gap-4">
+                    <div>
+                      <h4 className="text-white font-bold text-xs md:text-lg">{testimonial.author}</h4>
+                      <p className="text-green-400 text-[9px] md:text-sm font-medium">{testimonial.role}</p>
+                    </div>
+                    <div className="relative shrink-0">
+                      <div className="absolute inset-0 bg-green-500/30 blur-xl rounded-full scale-125 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <img
+                        src={testimonial.photo}
+                        alt={testimonial.author}
+                        className="relative w-7 h-7 md:w-14 md:h-14 rounded-full object-cover border md:border-2 border-green-500/30 group-hover:border-green-500/50 transition-colors duration-200"
+                      />
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+          </div>
+        </section>
+
+        {/* BRANDS MARQUEE — after testimonials, continues the black background */}
         <BrandsMarquee />
 
         {/* SECTION 7 - BACKSTORY */}
@@ -426,68 +489,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SECTION 8 - TESTIMONIALS */}
-        <section id="testimonials" className="py-16 relative section-dark-grid">
-          <div className="px-6 max-w-7xl mx-auto relative z-10">
-          <FadeIn className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">What People Say</h2>
-            <p className="text-xl text-muted-foreground font-light">From the creators and clients I've worked with.</p>
-          </FadeIn>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
-            {[
-              {
-                quote: "Extremely reliable video editor. He knows what it takes to create viral content and you can always count on him. He was pivotal for the success of my channels.",
-                author: "Aaron van Kampen",
-                role: "Content Creator",
-                photo: "https://ucarecdn.com/929b30bc-f188-48a1-8aaa-4ec405bb9f93/-/format/auto/"
-              },
-              {
-                quote: "Thanks to Job we were able to grow the podcast from 900 to 150K+ subscribers. He communicates well and is constantly innovating new ideas.",
-                author: "Calum Johnson",
-                role: "Podcast Host",
-                photo: "https://yt3.googleusercontent.com/_rIE-WwpkpqrtcHmNNsvEuPzo1OvQi_9LrQYxc6D2ejvsT23J8CKyseBjZ4cOwL93KTVa8zqig=s400-c-k-c0x00ffffff-no-rj"
-              },
-              {
-                quote: "Job was one of the video editors in our UGC-agency team. I would recommend using him as an editor because he does what he says and the performance of his ads was great.",
-                author: "Kevin Vriens",
-                role: "Agency Owner",
-                photo: "/kevin-vriens.png"
-              }
-            ].map((testimonial, i) => (
-              <FadeIn
-                key={i}
-                delay={i * 0.15}
-                className={i === 2 ? 'col-span-2 md:col-span-1 flex justify-center mt-1 md:mt-0' : ''}
-              >
-                <div className={`relative h-full w-full ${i === 2 ? 'max-w-[calc(50%-6px)] md:max-w-none' : ''}`}>
-                  <div className="absolute -inset-12 bg-[radial-gradient(ellipse_at_center,_#080808_0%,_transparent_65%)] pointer-events-none" />
-                  <div className="bg-card border border-white/10 rounded-xl md:rounded-[2rem] p-3 md:p-8 h-full flex flex-col relative overflow-hidden group hover:border-green-500/30 hover:-translate-y-1 transition-all duration-200 shadow-[0_0_22px_-6px_rgba(34,197,94,0.44)] hover:shadow-[0_0_35px_-4px_rgba(34,197,94,0.69)]">
-                  <div className="absolute top-0 right-0 p-3 md:p-8 opacity-5 text-4xl md:text-8xl font-serif text-white group-hover:text-green-400 transition-colors leading-none">"</div>
-                  <p className="text-muted-foreground text-[10px] md:text-lg leading-relaxed mb-3 md:mb-8 flex-grow relative z-10 italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="mt-auto relative z-10 flex items-center justify-between gap-2 md:gap-4">
-                    <div>
-                      <h4 className="text-white font-bold text-xs md:text-lg">{testimonial.author}</h4>
-                      <p className="text-green-400 text-[9px] md:text-sm font-medium">{testimonial.role}</p>
-                    </div>
-                    <div className="relative shrink-0">
-                      <div className="absolute inset-0 bg-green-500/30 blur-xl rounded-full scale-125 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <img
-                        src={testimonial.photo}
-                        alt={testimonial.author}
-                        className="relative w-7 h-7 md:w-14 md:h-14 rounded-full object-cover border md:border-2 border-green-500/30 group-hover:border-green-500/50 transition-colors duration-200"
-                      />
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-          </div>
-        </section>
 
         <div className="max-w-7xl mx-auto px-6"><div className="border-t border-white/15" /></div>
 
