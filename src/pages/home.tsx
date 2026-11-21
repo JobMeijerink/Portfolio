@@ -107,7 +107,8 @@ export default function Home() {
               {/* About me text — order-1 on mobile (appears first), order-2 on desktop (right col) */}
               <FadeIn delay={0.2} className="order-1 lg:order-2">
                 <h3 className="text-primary font-semibold tracking-wider uppercase text-sm mb-4">About Me</h3>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">A Dutch Video Editor Living Life on the Road</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">A Dutch Video Editor 
+                  Living Life on the Road</h2>
                 <p className="text-muted-foreground text-lg md:text-xl mb-5 leading-relaxed font-light">My name is Job (Jacob in English). I'm 27, Dutch, and I've been traveling the world while building a career in video editing.</p>
                 <p className="text-muted-foreground text-lg md:text-xl mb-8 leading-relaxed font-light">I've built a global network in the creator space, worked with e.g. big YouTube channels and UGC-agencies, and generated over 500 million views across platforms through organic content alone.</p>
 
