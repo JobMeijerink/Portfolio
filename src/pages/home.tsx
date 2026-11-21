@@ -313,7 +313,7 @@ export default function Home() {
         {/* SECTION 6 - PAST PARTNERSHIPS */}
         <section className="py-16 relative bg-black">
           <div className="px-6 max-w-7xl mx-auto relative z-10">
-          <FadeIn className="mb-10">
+          <FadeIn className="mb-10 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Past and Current Partnerships</h2>
             <p className="text-xl text-muted-foreground font-light">Creators and channels I've had the privilege to work with so far.</p>
           </FadeIn>
@@ -355,9 +355,18 @@ export default function Home() {
         </section>
 
         {/* SECTION 8 - TESTIMONIALS */}
-        <section id="testimonials" className="py-16 relative bg-black">
+        <section id="testimonials" className="pt-4 md:pt-6 pb-16 relative bg-black overflow-hidden">
+          {/* Soft green spotlight behind the reviews */}
+          <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+            <div className="absolute left-1/2 top-[55%] -translate-x-1/2 -translate-y-1/2 w-[120%] md:w-[85%] h-[80%] rounded-[50%] bg-[radial-gradient(ellipse_at_center,_rgba(34,197,94,0.24)_0%,_rgba(34,197,94,0.08)_40%,_transparent_70%)] blur-2xl" />
+            <div className="absolute left-1/2 top-[30%] -translate-x-1/2 w-[60%] h-[40%] rounded-[50%] bg-[radial-gradient(ellipse_at_center,_rgba(99,102,241,0.16)_0%,_transparent_70%)] blur-3xl" />
+          </div>
           <div className="px-6 max-w-7xl mx-auto relative z-10">
           <FadeIn className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 mb-5 px-3 md:px-4 py-1.5 rounded-full whitespace-nowrap border border-green-500/30 bg-green-500/10 shadow-[0_0_24px_-6px_rgba(34,197,94,0.6)]">
+              <span className="text-amber-400 text-xs md:text-sm tracking-[0.1em] md:tracking-[0.15em] leading-none">★★★★★</span>
+              <span className="text-[10px] md:text-xs font-semibold uppercase tracking-wider md:tracking-widest text-green-300">Trusted by creators &amp; agencies</span>
+            </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">What People Say</h2>
             <p className="text-xl text-muted-foreground font-light">From the creators and clients I've worked with.</p>
           </FadeIn>
@@ -389,10 +398,10 @@ export default function Home() {
                 className={i === 2 ? 'col-span-2 md:col-span-1 flex justify-center mt-1 md:mt-0' : ''}
               >
                 <div className={`relative h-full w-full ${i === 2 ? 'max-w-[calc(50%-6px)] md:max-w-none' : ''}`}>
-                  <div className="absolute -inset-12 bg-[radial-gradient(ellipse_at_center,_#080808_0%,_transparent_65%)] pointer-events-none" />
-                  <div className="bg-card border border-white/10 rounded-xl md:rounded-[2rem] p-3 md:p-8 h-full flex flex-col relative overflow-hidden group hover:border-green-500/30 hover:-translate-y-1 transition-all duration-200 shadow-[0_0_22px_-6px_rgba(34,197,94,0.44)] hover:shadow-[0_0_35px_-4px_rgba(34,197,94,0.69)]">
-                  <div className="absolute top-0 right-0 p-3 md:p-8 opacity-5 text-4xl md:text-8xl font-serif text-white group-hover:text-green-400 transition-colors leading-none">"</div>
-                  <p className="text-muted-foreground text-[10px] md:text-lg leading-relaxed mb-3 md:mb-8 flex-grow relative z-10 italic">
+                  <div className="bg-gradient-to-br from-[#0f1d15] via-card to-card border border-green-500/20 rounded-xl md:rounded-[2rem] p-3 md:p-8 h-full flex flex-col relative overflow-hidden group hover:border-green-500/30 hover:-translate-y-1 transition-all duration-200 shadow-[0_0_22px_-6px_rgba(34,197,94,0.44)] hover:shadow-[0_0_35px_-4px_rgba(34,197,94,0.69)]">
+                  <div className="absolute top-0 right-0 p-3 md:p-8 opacity-10 text-4xl md:text-8xl font-serif text-green-400 group-hover:opacity-20 transition-colors leading-none">"</div>
+                  <div className="text-amber-400 text-[10px] md:text-base tracking-[0.15em] mb-1.5 md:mb-4 relative z-10 leading-none" aria-label="5 out of 5 stars">★★★★★</div>
+                  <p className="text-foreground/80 text-[10px] md:text-lg leading-relaxed mb-3 md:mb-8 flex-grow relative z-10 italic">
                     "{testimonial.quote}"
                   </p>
                   <div className="mt-auto relative z-10 flex items-center justify-between gap-2 md:gap-4">
