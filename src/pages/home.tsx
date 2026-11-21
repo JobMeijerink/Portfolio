@@ -321,7 +321,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
             {[
               { name: "Aaron van Kampen", image: "https://ucarecdn.com/929b30bc-f188-48a1-8aaa-4ec405bb9f93/-/format/auto/", desc: "Canadian real estate content creator. Worked on mansion tour videos and real estate vlogs." },
-              { name: "The Calum Johnson Show", image: "https://yt3.googleusercontent.com/_rIE-WwpkpqrtcHmNNsvEuPzo1OvQi_9LrQYxc6D2ejvsT23J8CKyseBjZ4cOwL93KTVa8zqig=s400-c-k-c0x00ffffff-no-rj", desc: "Grew the podcast from 900 to 200K+ YouTube subscribers through consistent editing and creative innovation." },
+              { name: "The Calum Johnson Show", image: "https://yt3.googleusercontent.com/_rIE-WwpkpqrtcHmNNsvEuPzo1OvQi_9LrQYxc6D2ejvsT23J8CKyseBjZ4cOwL93KTVa8zqig=s400-c-k-c0x00ffffff-no-rj", desc: "Grew the podcast from 0 to 200K+ YouTube subscribers through consistent editing and creative innovation." },
               { name: "Reuben Schmitz", image: "https://yt3.googleusercontent.com/9OyETUL-aNJaf18h9mM0Xuw_5buRTeYy0xSsScGDTU-BGbkvk2aOK30zOwn7dCiOKM6NjPuyVw=s400-c-k-c0x00ffffff-no-rj", initials: "RS", desc: "Travel & lifestyle YouTuber. Edited travel vlogs showcasing destinations around the world." },
             ].map((partner, i) => (
               <FadeIn
@@ -371,7 +371,7 @@ export default function Home() {
                 photo: "https://ucarecdn.com/929b30bc-f188-48a1-8aaa-4ec405bb9f93/-/format/auto/"
               },
               {
-                quote: "Thanks to Job we were able to grow the podcast from 900 to 200K+ subscribers. He communicates well and is constantly innovating new ideas.",
+                quote: "Thanks to Job we were able to grow the podcast from 0 to 200K+ subscribers. He communicates well and is constantly innovating new ideas.",
                 author: "Calum Johnson",
                 role: "Podcast Host",
                 photo: "https://yt3.googleusercontent.com/_rIE-WwpkpqrtcHmNNsvEuPzo1OvQi_9LrQYxc6D2ejvsT23J8CKyseBjZ4cOwL93KTVa8zqig=s400-c-k-c0x00ffffff-no-rj"
