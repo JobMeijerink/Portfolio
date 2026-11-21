@@ -114,13 +114,13 @@ export default function Home() {
                 <div className="grid grid-cols-4 gap-2">
                   {[
                     { label: 'Premiere Pro',        Icon: Scissors,   rest: 'bg-indigo-950/30 border-indigo-500/20',   hov: 'hover:bg-indigo-950/70 hover:border-indigo-500/40 hover:text-indigo-200 hover:shadow-[0_0_16px_-4px_rgba(99,102,241,0.45)]' },
-                    { label: 'After Effects',        Icon: Sparkles,   rest: 'bg-purple-950/30 border-purple-500/20',   hov: 'hover:bg-purple-950/70 hover:border-purple-500/40 hover:text-purple-200 hover:shadow-[0_0_16px_-4px_rgba(168,85,247,0.45)]' },
+                    { label: 'AI Tools',        Icon: Sparkles,   rest: 'bg-purple-950/30 border-purple-500/20',   hov: 'hover:bg-purple-950/70 hover:border-purple-500/40 hover:text-purple-200 hover:shadow-[0_0_16px_-4px_rgba(168,85,247,0.45)]' },
                     { label: 'Short-Form',           Icon: Zap,        rest: 'bg-cyan-950/30 border-cyan-500/20',       hov: 'hover:bg-cyan-950/70 hover:border-cyan-500/40 hover:text-cyan-200 hover:shadow-[0_0_16px_-4px_rgba(34,211,238,0.4)]' },
                     { label: 'Long-Form',            Icon: Film,       rest: 'bg-blue-950/30 border-blue-500/20',       hov: 'hover:bg-blue-950/70 hover:border-blue-500/40 hover:text-blue-200 hover:shadow-[0_0_16px_-4px_rgba(59,130,246,0.4)]' },
-                    { label: 'Motion Design',        Icon: Layers,     rest: 'bg-rose-950/30 border-rose-500/20',       hov: 'hover:bg-rose-950/70 hover:border-rose-500/40 hover:text-rose-200 hover:shadow-[0_0_16px_-4px_rgba(251,113,133,0.4)]' },
-                    { label: 'UGC Ads',              Icon: TrendingUp, rest: 'bg-emerald-950/30 border-emerald-500/20', hov: 'hover:bg-emerald-950/70 hover:border-emerald-500/40 hover:text-emerald-200 hover:shadow-[0_0_16px_-4px_rgba(52,211,153,0.4)]' },
-                    { label: 'Thumbnails',           Icon: ImageIcon,  rest: 'bg-amber-950/30 border-amber-500/20',     hov: 'hover:bg-amber-950/70 hover:border-amber-500/40 hover:text-amber-200 hover:shadow-[0_0_16px_-4px_rgba(251,191,36,0.4)]' },
-                    { label: 'Visual Story Telling', Icon: Eye,        rest: 'bg-rose-950/30 border-rose-500/20',       hov: 'hover:bg-rose-950/70 hover:border-rose-500/40 hover:text-rose-200 hover:shadow-[0_0_16px_-4px_rgba(251,113,133,0.4)]' },
+                    { label: 'Animation',        Icon: Layers,     rest: 'bg-rose-950/30 border-rose-500/20',       hov: 'hover:bg-rose-950/70 hover:border-rose-500/40 hover:text-rose-200 hover:shadow-[0_0_16px_-4px_rgba(251,113,133,0.4)]' },
+                    { label: 'UGC & AI based-ads',              Icon: TrendingUp, rest: 'bg-emerald-950/30 border-emerald-500/20', hov: 'hover:bg-emerald-950/70 hover:border-emerald-500/40 hover:text-emerald-200 hover:shadow-[0_0_16px_-4px_rgba(52,211,153,0.4)]' },
+                    { label: 'Post Production',           Icon: ImageIcon,  rest: 'bg-amber-950/30 border-amber-500/20',     hov: 'hover:bg-amber-950/70 hover:border-amber-500/40 hover:text-amber-200 hover:shadow-[0_0_16px_-4px_rgba(251,191,36,0.4)]' },
+                    { label: 'Story Telling', Icon: Eye,        rest: 'bg-rose-950/30 border-rose-500/20',       hov: 'hover:bg-rose-950/70 hover:border-rose-500/40 hover:text-rose-200 hover:shadow-[0_0_16px_-4px_rgba(251,113,133,0.4)]' },
                   ].map(({ label, Icon, rest, hov }) => (
                     <span key={label} className={`flex flex-col items-center justify-center gap-1 border text-white/90 px-2 py-2 rounded-xl text-[10px] md:text-xs font-medium transition-all duration-200 cursor-default text-center leading-tight ${rest} ${hov}`}>
                       <Icon className="w-3.5 h-3.5 opacity-60 shrink-0" />
