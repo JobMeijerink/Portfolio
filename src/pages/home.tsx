@@ -549,7 +549,7 @@ export default function Home() {
               },
               {
                 q: "What tools do you use?",
-                a: "Adobe Premiere Pro and Adobe After Effects are my primary tools. I also have experience in motion design and basic graphic design."
+                a: "I only use Adobe Premiere and AI-tools in my workflow. I don't need tools like After Effects as AI handles the difficult tasks for me."
               },
               {
                 q: "How long does it take to get my video ready?",
