@@ -4,6 +4,7 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { Button } from "@/components/ui/button";
 import { Play, ArrowRight, ChevronDown, ChevronRight, Instagram, Linkedin, Mail, Phone, Scissors, Sparkles, Zap, Film, Layers, TrendingUp, Image as ImageIcon, Eye, Globe } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import { PlatformIcon, type Platform } from "@/components/platform-icons";
 
 const UGC_ADS = [
   { title: "UGC Ad 01", thumb: "/ugc/1XYk5yXXpHRdkLas5s60ffKLUWBJOl6Kd.jpg",        link: "https://drive.google.com/file/d/1XYk5yXXpHRdkLas5s60ffKLUWBJOl6Kd/view" },
@@ -195,25 +196,25 @@ export default function Home() {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
               {[
-                { title: "Mansion Tours", views: "1M+",    thumb: "https://i.ytimg.com/vi/t1cNwVAjRXE/maxresdefault.jpg",                          link: "https://youtu.be/t1cNwVAjRXE?si=1kxM7_KexBECnI-p",                                     badge: "Long-Form",   objectPos: "center 30%", thumbCls: "scale-[1.35] group-hover:scale-[1.4]"  },
-                { title: "Podcast", views: "900K+", thumb: "https://i.ytimg.com/vi/aO0ZSTDxeYc/maxresdefault.jpg",                          link: "https://www.youtube.com/watch?v=aO0ZSTDxeYc",                                          badge: "Post-Production", objectPos: "top",        thumbCls: "scale-[1.15] group-hover:scale-[1.2]"  },
-                { title: "Real Estate", views: "5.9M", thumb: "https://ucarecdn.com/f4e166a2-e803-4354-9f2e-b727d061bc1d/-/format/auto/",    link: "https://www.facebook.com/aaronvankampenFB/videos/2052477421932547",                      badge: "Short-Form",  objectPos: "center 20%", thumbCls: "scale-[1.3] group-hover:scale-[1.35]"  },
-                { title: "Travel Vlogs", views: "400K+",    thumb: "https://i.ytimg.com/vi/Qlg-X2C4MLU/maxresdefault.jpg",                          link: "https://youtu.be/Qlg-X2C4MLU",                                     badge: "Long-Form",   objectPos: "center",     thumbCls: "scale-[1.15] group-hover:scale-[1.2]"  },
+                { title: "Mansion Tours", platforms: ["youtube","tiktok","instagram","facebook","spotify","snapchat"] as Platform[], views: "1M+", creatorViews: "250M+",    thumb: "https://i.ytimg.com/vi/t1cNwVAjRXE/maxresdefault.jpg",                          link: "https://youtu.be/t1cNwVAjRXE?si=1kxM7_KexBECnI-p",                                     badge: "Long-Form",   objectPos: "center 30%", thumbCls: "scale-[1.35] group-hover:scale-[1.4]"  },
+                { title: "Podcast", platforms: ["youtube","spotify"] as Platform[], views: "900K+", creatorViews: "50M+", thumb: "https://i.ytimg.com/vi/aO0ZSTDxeYc/maxresdefault.jpg",                          link: "https://www.youtube.com/watch?v=aO0ZSTDxeYc",                                          badge: "Post-Production", objectPos: "top",        thumbCls: "scale-[1.15] group-hover:scale-[1.2]"  },
+                { title: "Real Estate", platforms: ["youtube","tiktok","instagram","facebook","spotify","snapchat"] as Platform[], views: "5.9M", creatorViews: "250M+", thumb: "https://ucarecdn.com/f4e166a2-e803-4354-9f2e-b727d061bc1d/-/format/auto/",    link: "https://www.facebook.com/aaronvankampenFB/videos/2052477421932547",                      badge: "Short-Form",  objectPos: "center 20%", thumbCls: "scale-[1.3] group-hover:scale-[1.35]"  },
+                { title: "Travel Vlogs", platforms: ["youtube","instagram"] as Platform[], views: "400K+", creatorViews: "10M+",    thumb: "https://i.ytimg.com/vi/Qlg-X2C4MLU/maxresdefault.jpg",                          link: "https://youtu.be/Qlg-X2C4MLU",                                     badge: "Long-Form",   objectPos: "center",     thumbCls: "scale-[1.15] group-hover:scale-[1.2]"  },
               ].map((project, i) => (
                 <FadeIn key={i} delay={i * 0.1}>
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="group block relative rounded-2xl overflow-hidden bg-card border border-white/15 hover:border-primary/40 hover:shadow-[0_0_40px_-15px_hsl(var(--primary))] transition-all duration-500 h-full flex flex-col hover:-translate-y-[2%]">
                     <div className="relative aspect-video overflow-hidden">
                       <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500 z-10" />
                       <img src={project.thumb} alt={project.title} className={`w-full h-full object-cover transition-transform duration-700 ${project.thumbCls}`} style={{ objectPosition: project.objectPos }} />
-                      <div className="absolute top-2 left-2 sm:top-4 sm:left-4 z-20">
-                        <span className="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] sm:text-xs font-semibold px-2 py-1 sm:px-3 sm:py-1.5 rounded-full">
+                      <div className="absolute top-1.5 left-1.5 sm:top-4 sm:left-4 z-20">
+                        <span className="bg-black/60 backdrop-blur-md border border-white/10 text-white text-[10px] sm:text-xs font-semibold px-1.5 py-1 sm:px-3 sm:py-1.5 rounded-full">
                           {project.badge}
                         </span>
                       </div>
-                      <div className="absolute bottom-2 right-2 sm:bottom-auto sm:top-4 sm:right-4 z-20">
-                        <span className="flex items-center gap-1 sm:gap-1.5 bg-emerald-950/60 backdrop-blur-md border border-emerald-400/50 text-white text-[10px] sm:text-xs font-semibold px-2 py-1 sm:px-3 sm:py-1.5 rounded-full">
+                      <div className="absolute top-1.5 right-1.5 sm:top-4 sm:right-4 z-20">
+                        <span className="flex items-center gap-0.5 sm:gap-1.5 bg-emerald-950/60 backdrop-blur-md border border-emerald-400/50 text-white text-[10px] sm:text-xs font-semibold px-1.5 py-1 sm:px-3 sm:py-1.5 rounded-full">
                           <TrendingUp className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-emerald-300" />
-                          {project.views} views
+                          {project.views}<span className="sr-only"> views</span>
                         </span>
                       </div>
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
@@ -224,6 +225,14 @@ export default function Home() {
                     </div>
                     <div className="p-3 sm:p-6 border-t border-white/10 flex-grow">
                       <h3 className="text-sm sm:text-xl font-bold text-white mb-1 sm:mb-2">{project.title}</h3>
+                      <p className="flex items-center gap-[3px] sm:gap-1.5 text-[9px] sm:text-[11px] text-muted-foreground whitespace-nowrap mb-2 sm:mb-3">
+                        <span><span className="text-emerald-300 font-semibold">{project.creatorViews}</span><span className="sm:hidden"> creator views</span><span className="hidden sm:inline"> total views for this creator</span></span>
+                        <span className="flex items-center gap-[2px] sm:gap-1 text-white/55">
+                          {project.platforms.map((pl) => (
+                            <PlatformIcon key={pl} platform={pl} className="w-[7px] h-[7px] sm:w-2.5 sm:h-2.5 shrink-0" />
+                          ))}
+                        </span>
+                      </p>
                       <span className="text-primary text-xs sm:text-sm font-semibold flex items-center">
                         Watch <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1" />
                       </span>
