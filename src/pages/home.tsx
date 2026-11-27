@@ -68,7 +68,7 @@ export default function Home() {
 
                 <FadeIn delay={0.3}>
                   <p className="text-lg md:text-xl text-muted-foreground mb-7 max-w-xl font-light leading-relaxed">
-                    I help creators and brands produce high-performing content that converts views into real growth — from YouTube documentaries to viral short-form.
+                    I help creators and brands produce high-performing content that converts views into real growth — from YouTube documentaries to high-converting ads and viral short-form.
                   </p>
                 </FadeIn>
 
@@ -92,7 +92,7 @@ export default function Home() {
                 {/* Sticker badge — overlaps bottom ~25% onto photo */}
                 <div className="relative -mt-5 z-10 flex items-center gap-2 bg-card/80 backdrop-blur-xl border border-white/20 text-white px-5 py-3 rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6),_0_0_16px_-4px_rgba(139,92,246,0.5)] whitespace-nowrap">
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0" />
-                  <span className="text-sm font-semibold tracking-wide">Video Editor & Social Media Expert</span>
+                  <span className="text-sm font-semibold tracking-wide">Video Editor & AI Specialist</span>
                 </div>
                 {/* Scroll chevrons — mobile only, no extra layout space */}
                 <div className="md:hidden flex flex-col items-center gap-0 mt-3 select-none pointer-events-none">
