@@ -386,7 +386,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
             {[
               {
-                quote: "Extremely reliable video editor. He knows what it takes to create viral content and you can always count on him. He was pivotal for the success of my channels.",
+                quote: "Very reliable video editor. He was important for the growth of my channels as he knows what it takes to create viral content. Most important of all: you can always count on him.",
                 author: "Aaron van Kampen",
                 role: "Content Creator",
                 photo: "https://ucarecdn.com/929b30bc-f188-48a1-8aaa-4ec405bb9f93/-/format/auto/"
